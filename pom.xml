@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>simplecalc</groupId>
   <artifactId>simplecalc</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>simplecalc</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -15,6 +15,19 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <classpathPrefix>src/</classpathPrefix>
+                        <mainClass>com.comp.simplecalc.SimpleCalc</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
     </plugins>
   </build>
 </project>
