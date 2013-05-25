@@ -9,8 +9,6 @@ package com.comp.simplecalc;
  */
 //import
 import java.util.*;
-
-import com.comp.simplecalc.*;
 //define class
 public class SimpleCalc
 {
